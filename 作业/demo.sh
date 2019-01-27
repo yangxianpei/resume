@@ -9,7 +9,8 @@ else
   <title>Hello</title>
   <h1>Hi</h1>">index.txt&&mv index.txt index.html  
   cd css&&touch style.txt&&echo "h1{color: red;}">style.txt&&mv style.txt style.css
-  cd js&&mkdir main.txt&&echo "var string = "Hello World""> main.txt &&mv main.txt mian.js
+  cd ..
+  cd js&&touch main.txt&&echo "var string = "Hello World""> main.txt &&mv main.txt mian.js
   echo 'success'
   exit
 fi
