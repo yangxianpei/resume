@@ -1,0 +1,60 @@
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+body{
+    background-color: black;
+    color:wheat;
+    margin: 0;
+}
+.TopNavBar a{
+    color: inherit;
+    padding-top: 8px;
+}
+.TopNavBar>nav>ul>li{
+    float:left;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+.TopNavBar nav ul {
+    list-style: none;
+    margin:0;
+    padding: 0;    
+}
+.TopNavBar{
+    
+    padding:18px;16px;18px;16px;
+}
+.TopNavBar nav ul a {
+    font-size:12px;
+    color:#87A7BC;
+    text-decoration: none;
+    font-weight: bold;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.TopNavBar a{
+    float:left;
+    text-decoration: none;
+    font-weight: bold;
+}
+.TopNavBar nav{     
+    float: right;
+}
+.TopNavBar nav ul li a:hover{
+    border-bottom:2px solid red;
+}
+.rs{
+    font-size: 25px;
+    font-family:"Arial Black";
+    color: #E6686A;
+    padding-right: 4px;
+}
+.card{
+    font-size: 25px;
+    font-family:"Arial Black";
+    color: #9A9DA2; 
+}
