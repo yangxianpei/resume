@@ -4,27 +4,36 @@
     clear: both;
   }
 body{
-    background-color: black;
-    color:wheat;
+    background-color:#EFEFEF;
+    color:black;
     margin: 0;
 }
 .TopNavBar a{
+    float:left;
     color: inherit;
-    padding-top: 8px;
+
 }
-.TopNavBar>nav>ul>li{
+.TopNavBar nav>ul>li{
     float:left;
     margin-left: 17px;
     margin-right: 17px;
 }
+
+ .TopNavBar-ner{
+    padding: 0 18px;
+}
 .TopNavBar nav ul {
+    
     list-style: none;
     margin:0;
     padding: 0;    
 }
-.TopNavBar{
-    
-    padding:18px;16px;18px;16px;
+.TopNavBar {  
+    padding:18px 0px 18px  0px;
+    position:fixed;
+   top:0;
+   left: 0;
+  width:100%;
 }
 .TopNavBar nav ul a {
     font-size:12px;
@@ -57,4 +66,137 @@ body{
     font-size: 25px;
     font-family:"Arial Black";
     color: #9A9DA2; 
+}
+.banner{
+    background-image:url(/img/rs-cover.jpg);  
+    height: 516px;
+    background-position:center center;
+    background-size: cover;
+}
+.banner .mask{
+    height: 516px;
+    background-color:rgba(0, 0,0, 0.5);
+}
+.Usercard{
+
+    max-width: 940px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.Usercard .toppicture{
+    padding: 50px 50px;
+}
+.infromation .welcome{
+    background: #E6686A;
+    color: white;
+    display: inline-block;  ;
+    padding: 6px 15px;
+    line-height: 18px;
+    position: relative;
+    margin-bottom: 8px;
+
+}
+.welcome .triangle{
+    border:10px solid transparent;
+    display: inline-block;
+    width:0px;
+    border-top-width:0;
+    border-left-color:#E6686A;
+    position: absolute;
+    left: 4px;
+    top:100%;
+}
+.infromation{
+    float: left;
+    padding-left: 67px;
+    width: 470px;
+}
+.picture{
+    float: left;
+}
+*{
+    margin: 0;
+    padding:0;
+}
+.infromation h1{
+ padding-top: 15px
+}
+.infromation p{
+   padding-top: 10px;
+}
+.infromation hr{
+    margin: 20px 0;
+}
+
+.infromation dl dt,
+.infromation dl dd{
+    float: left;
+    padding: 15px 0px;
+}
+
+.infromation dl dt{
+    width: 10%;
+   
+}
+.infromation dl dd{
+    width:90%;
+    color: #9DA0A7;
+}
+.person{
+    font-weight: bold;
+}
+.Usercard footer.media {
+    background-color: #E6686A;
+    text-align: center;
+    padding: 10px 0;
+
+}
+.Usercard footer a{
+
+    border-radius: 50%;
+    display: inline-block;
+   padding: 10px;
+}
+.Usercard footer a:hover{
+    background: #CF5D5F;
+}
+.Usercard svg{
+    width: 30px;
+    height: 30px;
+    fill:white;
+    vertical-align: tap;
+}
+main .taiji{
+    border: 1px solid red;
+  padding-left: 50%;
+    padding-right: 50%;
+ }
+.yinyang{ 
+    width: 96px;
+  box-sizing: content-box; 
+  height: 48px; background: #eee;
+  border-color: red;
+  border-style: solid; 
+  border-width: 2px 2px 50px 2px; 
+  border-radius: 100%;
+  position: relative; 
+ } 
+.aaa{
+  content: "";
+  position: absolute; 
+  top: 50%; left: 0;
+  background: #eee; 
+  border: 18px solid red ;
+  border-radius: 100%; width: 12px;
+  height: 12px;
+  box-sizing: content-box;
+}
+.bbb{
+  content: ""; 
+  position: absolute; 
+  top: 50%; left: 50%;
+  background: red; border: 18px solid #eee;
+  border-radius: 100%;
+  width: 12px; height: 12px;
+  box-sizing:  content-box;
 }
