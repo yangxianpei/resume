@@ -1,0 +1,51 @@
+body{
+  background: #444;
+}
+#yiyang{
+
+  width:200px;
+  height:200px;
+  border-radius:50%;
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
+  position: relative;
+    margin:100px auto;
+  animation-duration: 3s;
+  animation-name: slidein;
+animation-iteration-count:infinite;
+animation-timing-function: linear;
+}
+
+#yiyang::before{
+  content:'';
+  display: block;
+   border:40px solid black;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  position:absolute;
+    top:50px;
+  background:#fff;
+    
+}
+
+#yiyang::after{
+  content:'';
+  display: block;
+   border:40px solid white;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  position:absolute;
+    top:50px;
+  background:black;
+  right:0px
+}
+@keyframes slidein {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+   transform: rotate(360deg);
+  }
+}
