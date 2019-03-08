@@ -3,7 +3,9 @@
 
 <head>
     <title>个人简历</title>
+    <link rel="stylesheet" href="./loading.css">
     <link rel="stylesheet" href="./css.css">
+   
     <script src="//at.alicdn.com/t/font_1046533_eaa0tc9l0w.js"></script>
     <style type="text/css">
         .icon {
@@ -13,21 +15,53 @@
             fill: currentColor;
             overflow: hidden;
         }
+        .setwelcome{
+            display: none;
+            position:fixed;
+            left:0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            background: #ddd;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .setwelcome.active{
+            display: flex;
+        }
     </style>
 </head>
 
 <body>
-    <div class="topnavigation ">
+    <div id="setwelcome"class="setwelcome active">
+            <div class="loading"></div>
+    </div>
+    <div id="topnavigation"class="topnavigation">
         <div class="topnavcontainer clearfix">
             <a href="#" alf="logo">
                 <span class="rs">Rs</span>
                 <span class="card">card</span>
             </a>
-            <ul class="clearfix">
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">博客</a></li>
+            <ul  class="menu"class=" clearfix">
+                <li><a href="#about">关于</a></li>
+                <li><a href="#siteSkills">技能</a></li>
+                <li >
+                    <a href="#siteWorks">作品</a>
+                    <ul class="submenu"> 
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                </li>
+                <li >
+                    <a href="#">博客</a>
+                    <ul class="submenu"> 
+                            <li>博客1</li>
+                            <li>博客2</li>
+                            <li>博客3</li>
+                    </ul>
+                </li> 
                 <li><a href="#">日历</a></li>
                 <li><a href="#">联系</a></li>
                 <li><a href="#">其他</a></li>
@@ -37,7 +71,8 @@
     <div class="bannerpicture">
         <div class="mask"></div>
     </div>
-    <main class="information ">
+
+    <main id="about"class="information ">
         <div class="topinformat clearfix">
             <div class="pictureavater">
                 <img src="./img/杨贤培.jpg" alt="头像" class="avater"
@@ -75,7 +110,7 @@
     <p class="jieshao">只有你愿意相信生命本身就是一个奇迹，奇迹方会降临于你。
     </p>
     <p class="jieshao1">一《朝圣》</p>
-    <section class="skills">
+    <section id="siteSkills"class="skills">
         <h1>技能</h1>
         <ol class="userskill clearfix">
             <li>HTML 5 &amp;CSS 3
@@ -110,7 +145,9 @@
             </li>
         </ol>
     </section>
-    <section class="userportfolio">
+
+
+    <section id="siteWorks" class="userportfolio">
         <h1>作品集</h1>
         <nav>
             <ol class="clearfix">
@@ -139,7 +176,7 @@
             <div class="small"style="top:312px; height:293px; left:627px;"><img class="userpictur2" src="./img/3.jpg" alt="作品3"></div>
         </div>
     </section>
-
+ <script src="./main.js"></script>
 </body>
 
 </html>
