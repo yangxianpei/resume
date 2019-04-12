@@ -1,6 +1,10 @@
 body{
     background-color: #EFEFEF;
 }
+
+
+
+
 .setwelcome{
     display: none;
     position:fixed;
@@ -297,63 +301,13 @@ padding-right: 30px;
 }
 .userportfolio{
     text-align: center;
-}
-.userportfolio > nav{
-    display: inline-block;
-    vertical-align: top;
-}
-.userportfolio > nav > ol{
-    display: inline-block;
-    vertical-align: top;
-    cursor: pointer;
-
-}
-.userportfolio > nav > .bar{
-   background:  #FAE1E1;
-  border-radius: 2px;
-   height: 5px;
-}
-.userportfolio > nav > .bar >.bbbb{
-    height: 100%;
-    transition: all 0.3s;
-    background: #E6686A;
-    border-radius: 2px;
-    margin-top: 10px;
-
-}
-.userportfolio > nav > ol >li{
-    float: left;
-    padding-left: 40px;
-}
-.userportfolio > nav > ol >li:nth-child(1){
-    padding-left: 0px;
+    padding-bottom: 100px;
 }
 
-.userportfolio > nav > .bar.state-1 .bbbb{
-    width: 15%;
-    margin-left: 0px;
+.swiper-container {
+    width: 600px;
+    height: 300px;
 }
-.userportfolio > nav > .bar.state-2 .bbbb{
-    width: 17%;
-    margin-left: 71px;
-}
-.userportfolio > nav > .bar.state-3 .bbbb{
-    width: 41%;
-    margin-left: 143px;
-}
-.words{
-    margin-top: 50px;
-    margin-bottom: 100px;   
-   height:  597px;
-}
-.words {
-    position: relative;
-}
-.words > .big,
-.words>.small{
-  position: absolute;
-}
-
 [data-x].offset{
     transform:translateY(-50px);
 }
@@ -361,4 +315,28 @@ padding-right: 30px;
     transform:translateY(0);
     transition: all 0.5s;
 
+}
+
+.messages{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.messages h1{
+    padding-top:0;
+}
+.messages #formMessage{
+
+    
+}
+.messages .send{
+    text-align: center;
+}
+#formMessage ol {
+    margin-top:50px;
+}
+#formMessage ol li{
+  padding: 16px;  
+  border-bottom: 1px solid #D9D9D8;
+  border-top:1px solid #D9D9D8;
 }

@@ -5,8 +5,8 @@
     <title>个人简历</title>
     <link rel="stylesheet" href="./loading.css">
     <link rel="stylesheet" href="./css.css">
-
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <style type="text/css">
         .icon {
             width: 1em;
@@ -14,39 +14,39 @@
             vertical-align: -0.15em;
             fill: currentColor;
             overflow: hidden;
-        }      
+        }
     </style>
 </head>
 
 <body>
-    <div id="setwelcome"class="setwelcome active">
-            <div class="loading"></div>
+    <div id="setwelcome" class="setwelcome active">
+        <div class="loading"></div>
     </div>
-    <div id="topnavigation"class="topnavigation">
+    <div id="topnavigation" class="topnavigation">
         <div class="topnavcontainer clearfix">
             <a href="#" alf="logo">
                 <span class="rs">Rs</span>
                 <span class="card">card</span>
             </a>
-            <ul  class="menu"class=" clearfix">
+            <ul class="menu" class=" clearfix">
                 <li><a href="#about">关于</a></li>
                 <li><a href="#siteSkills">技能</a></li>
-                <li >
+                <li>
                     <a href="#siteWorks">作品</a>
-                    <ul class="submenu"> 
+                    <ul class="submenu">
                         <li>作品1</li>
                         <li>作品2</li>
                         <li>作品3</li>
                     </ul>
                 </li>
-                <li >
+                <li>
                     <a href="#">博客</a>
-                    <ul class="submenu"> 
-                            <li>博客1</li>
-                            <li>博客2</li>
-                            <li>博客3</li>
+                    <ul class="submenu">
+                        <li>博客1</li>
+                        <li>博客2</li>
+                        <li>博客3</li>
                     </ul>
-                </li> 
+                </li>
                 <li><a href="#">日历</a></li>
                 <li><a href="#">联系</a></li>
                 <li><a href="#">其他</a></li>
@@ -56,8 +56,7 @@
     <div class="bannerpicture">
         <div class="mask"></div>
     </div>
-
-    <main  data-x id="about"class="information ">
+    <main data-x id="about" class="information ">
         <div class="topinformat clearfix">
             <div class="pictureavater">
                 <img src="./img/杨贤培.jpg" alt="头像" class="avater"
@@ -80,9 +79,8 @@
                 </dl>
             </div>
         </div>
-
         <footer class="media">
-            <a href="#" alf="...">
+            <a href="https://github.com/yangxianpei" alf="..." target="_blank">
                 <svg class="icon">
                     <use xlink:href="#icon-git"></use>
                 </svg>
@@ -92,15 +90,13 @@
                     <use xlink:href="#icon-weibo1"></use>
                 </svg>
             </a>
-
         </footer>
     </main>
     <div class="buttoncontainer"><a href="./res/a.pdf" target="_blank" class="button" download="">下载FTP简历</a></div>
     <p class="jieshao">只有你愿意相信生命本身就是一个奇迹，奇迹方会降临于你。
     </p>
     <p class="jieshao1">一《朝圣》</p>
-
-    <section data-x id="siteSkills"class="skills">
+    <section data-x id="siteSkills" class="skills">
         <h1>技能</h1>
         <ol class="userskill clearfix">
             <li>HTML 5 &amp;CSS 3
@@ -135,40 +131,44 @@
             </li>
         </ol>
     </section>
-
-
-    <section  data-x id="siteWorks" class="userportfolio">
+    <section data-x id="siteWorks" class="userportfolio">
         <h1>作品集</h1>
-        <nav>
-            <ol class="clearfix">
-                <li id="click1">所有</li>
-                <li id="click2">框架</li>
-                <li id="click3">原生JS &amp; CSS</li>
-            </ol>
-            <div id="userbar" class="bar state-1">
-                <div class="bbbb"></div>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <img class="swiper-slide" src="./img/1.jpg">
+                <img class="swiper-slide" src="./img/2.jpg">
+                <img class="swiper-slide" src="./img/3.jpg">
+                ...
             </div>
-        </nav>
-        <script>
-            click1.onclick = function () {
-                userbar.className = 'bar state-1'
-            }
-            click2.onclick = function () {
-                userbar.className = 'bar state-2'
-            }
-            click3.onclick = function () {
-                userbar.className = 'bar state-3'
-            }
-        </script>
-        <div class="words">
-            <div class="big"><img src="./img/1.jpg" alt="作品1"></div>
-            <div class="small"style="top:0px; height:293px; left:627px;"><img class="userpicture1" src="./img/2.jpg" alt="作品2" ></div>
-            <div class="small"style="top:312px; height:293px; left:627px;"><img class="userpictur2" src="./img/3.jpg" alt="作品3"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
     </section>
- <script src="./main.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
- <script src="//at.alicdn.com/t/font_1039129_o7z5opgvs6o.js"></script>
+    <section class="messages">
+        <h1>留言板</h1>
+        <form id='formMessage' style="width:700px;margin:50px auto">
+            <div class="send">
+                <label>姓名:</label>
+                <input type="text" name='name'>
+                <label>内容:</label>
+                <input type="text" name='content'>
+                <input type="submit" value="发送">
+            </div>
+            <ol></ol>
+        </form>
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.12.0/dist/av-min.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
+    <script src="//at.alicdn.com/t/font_1039129_o7z5opgvs6o.js"></script>
 </body>
 
 </html>
